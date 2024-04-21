@@ -5,4 +5,10 @@
 4,Which word matches the image?,eagle,eagle,hawk,kite
 5,Which word matches the image?,elk,elk,deer,moose
 6,Which word matches the image?,ladybird,ladybird,Lymexyloidea,Endomychidae
-7,Which word matches the image?,nightingale,robin,nightingale,silverbird
+7,Which word matches the image?,nightingale,robin,nightingale,silverbird8,test,  b,a,b,v
+8,test,  b,a,b,v
+9,test,  b,a,b,v
+10,test,  b,a,b,v
+11,test,  b,a,b,v
+12,test,  b,a,b,c
+13,Test2,  c,c,f,b

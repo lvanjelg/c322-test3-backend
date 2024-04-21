@@ -3,6 +3,7 @@ package edu.iu.c322.test3.repository;
 import edu.iu.c322.test3.model.Question;
 import edu.iu.c322.test3.model.Quiz;
 import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
@@ -14,7 +15,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.List;
-
+@CrossOrigin
 @Component
 public class FileRepository {
     private String IMAGES_FOLDER_PATH = "quizzes/questions/images";
@@ -94,7 +95,7 @@ public class FileRepository {
         if (Files.exists(path)) {
             List<String> data = Files.readAllLines(path);
             for (String line : data) {
-                if(line.trim().length() != 0) {
+                if(!line.trim().isEmpty()) {
                     Question q = Question.fromLine(line);
                     result.add(q);
                 }
